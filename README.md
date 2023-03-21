@@ -20,6 +20,8 @@ R packages data.table, ggplot2 and ranger
 ```
 Rscript GenomicPrediction_with_IncrementalFeatureSelection.R plinkBinaryPrefix threadCount
 ```
+## Examples
+The datasets we analyzed in our publication can be found as compressed PLINK binary files under [Datasets](https://github.com/FelixHeinrich/GP_with_IFS/tree/main/Datasets) (see also their corresponding publications [https://doi.org/10.3389/fgene.2018.00128](https://doi.org/10.3389/fgene.2018.00128) (Chicken), [https://doi.org/10.1534/g3.111.001453](https://doi.org/10.1534/g3.111.001453) (Pig) and [https://doi.org/10.1534/g3.119.400498](https://doi.org/10.1534/g3.119.400498) (Plants)).
 
 ## License
 
