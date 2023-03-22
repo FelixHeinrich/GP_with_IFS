@@ -20,8 +20,27 @@ R packages data.table, ggplot2 and ranger
 ```
 Rscript GenomicPrediction_with_IncrementalFeatureSelection.R plinkBinaryPrefix threadCount
 ```
+Description of arguments:
+
+```
+plinkBinaryPrefix     name of PLINK files without filename extension (.bed, .bim and .fam)
+threadCount           number of threads to use
+```
+
 ## Examples
 The datasets we analyzed in our publication can be found as compressed PLINK binary files under [Datasets](https://github.com/FelixHeinrich/GP_with_IFS/tree/main/Datasets) (see also their corresponding publications [https://doi.org/10.3389/fgene.2018.00128](https://doi.org/10.3389/fgene.2018.00128) (Chicken), [https://doi.org/10.1534/g3.111.001453](https://doi.org/10.1534/g3.111.001453) (Pig) and [https://doi.org/10.1534/g3.119.400498](https://doi.org/10.1534/g3.119.400498) (Plants)).
+
+#### Exemplary usage
+1. Download the [script](https://github.com/FelixHeinrich/GP_with_IFS/blob/main/GenomicPrediction_with_IncrementalFeatureSelection.R) as well as the [soy_HT](https://github.com/FelixHeinrich/GP_with_IFS/blob/main/Datasets/soy_HT.tar.gz) dataset and put them both in the same directory
+2. Open a terminal and go to the directory where the downloaded files are located
+3. Unpack the dataset with 
+```
+tar -xzf soy_HT.tar.gz
+```
+4. Run the script using 10 threads with  
+```
+Rscript GenomicPrediction_with_IncrementalFeatureSelection.R soy_HT 10
+```
 
 ## License
 
