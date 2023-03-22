@@ -111,7 +111,7 @@ for(i in 1:repeatNumber){
     #Run genomic prediction with incrementally added SNPs
     entryCounter = 1
     for(k in steps){
-      cat("Number of SNPs: ", k,"\n")
+      cat("Number of SNPs: ", k,"\r")
       currentTrainData = trainData[,1:(k+1)]
       currentTestData = testData[,1:(k+1)]
       rf = ranger(x = subset(currentTrainData, select =  -get("PHENOTYPE")), y = currentTrainData[,1], num.threads = threadCount, num.trees = numberTrees)
